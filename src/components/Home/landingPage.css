@@ -1,21 +1,21 @@
 .category1 {
-  background: url(https://i.ibb.co/cvpntL1/hats.png) center/cover no-repeat;
+  background: url(../assets/hat.jpg) center/cover no-repeat;
 }
 
 .category2 {
-  background: url(https://i.ibb.co/px2tCc3/jackets.png) center/cover no-repeat;
+  background: url(../assets/jackets.jpg) center/cover no-repeat;
 }
 
 .category3 {
-  background: url(https://i.ibb.co/0jqHpnp/sneakers.png) center/cover no-repeat;
+  background: url(../assets/sneakers.jpg) center/cover no-repeat;
 }
 
 .category4 {
-  background: url(https://i.ibb.co/GCCdy8t/womens.png) center/cover no-repeat;
+  background: url(../assets/women.jpg) center/cover no-repeat;
 }
 
 .category5 {
-  background: url(https://i.ibb.co/R70vBrQ/men.png) center/cover no-repeat;
+  background: url(../assets/dblackshirt.jpg) center/cover no-repeat;
 }
 
 .category-title {
@@ -24,12 +24,12 @@
   left: 50%;
   top: 50%;
   background: rgb(255, 255, 255);
+  border-radius: 8px;
   opacity: 0.6;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .category-title:hover {
-  background: rgb(255, 255, 255);
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 3px 5px 7px rgb(0, 0, 0, 0.5);

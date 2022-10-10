@@ -1,8 +1,10 @@
+import hat from "../assets/hat.jpg";
+
 export const Categories = [
   {
     id: 1,
     title: "hats",
-    imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+    imageUrl: hat,
   },
   {
     id: 2,
