@@ -17,11 +17,14 @@ const Nav = () => {
           <Link to={"/sign-in"}>
             <button className=" ">Sign In</button>
           </Link>
-          <button className="bg-orange py-1 px-2 rounded-[5px]">
-            Get Started
-          </button>
+          <Link to={"/sign-up"}>
+            <button className="bg-orange py-1 px-2 rounded-[5px]">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
+
       <Outlet />
     </Fragment>
   );

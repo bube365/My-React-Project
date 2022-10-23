@@ -12,6 +12,8 @@ module.exports = {
         orange: "#fb8500",
         red: "#e63946",
         dimWhite: "rgba(255, 255, 255, 0.7)",
+        blur: "rgba(255, 255, 255, 0.1)",
+        blurr: "rgba(255, 255, 255, 0.2)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
