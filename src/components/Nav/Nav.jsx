@@ -7,18 +7,18 @@ const Nav = () => {
   return (
     <Fragment>
       <div
-        className={`${styles.paddingX} py-3 bg-nav flex items-center justify-between`}
+        className={`${styles.paddingX} py-3 bg-nav h-full flex items-center justify-between`}
       >
         <Link to={"/"}>
-          <img src={Logo} alt="" className={` w-10 h-10 `} />
+          <img src={Logo} alt="" className={` w-12 h-12 `} />
         </Link>
 
         <div className="text-white hidden sm:flex gap-5 md:text-[14px]">
           <Link to={"/sign-in"}>
-            <button className=" ">Sign In</button>
+            <button className="py-3 px-8 ">Sign In</button>
           </Link>
           <Link to={"/sign-up"}>
-            <button className="bg-orange py-1 px-2 rounded-[5px]">
+            <button className="bg-orange py-3 px-8 rounded-[5px]">
               Get Started
             </button>
           </Link>

@@ -36,6 +36,6 @@
 }
 
 .nav {
-  background: url("../assets//heroImg.jpg") center/cover no-repeat;
-  /* background-color: rgb(2, 32, 48, 0.2); */
+  /* background: url("../assets//heroImg.jpg") center/cover no-repeat; */
+  background-color: #022030;
 }

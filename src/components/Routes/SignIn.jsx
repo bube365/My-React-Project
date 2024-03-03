@@ -8,7 +8,7 @@ const defaultField = {
 };
 
 export const SignIn = () => {
-  const [inputField, setInputField] = useState(defaultField);
+  const [inputField, setInputField] = useState("");
   const { email, password } = inputField;
 
   const handleChange = (event) => {
@@ -54,10 +54,11 @@ export const SignIn = () => {
           id="email"
           type="email"
           required
-          className="border border-t-0 border-x-0 border-nav"
+          className="border border-t-0 border-x-0 border-nav outline-none"
           name="email"
           onChange={handleChange}
           value={email}
+          placeholder="Enter your Email"
         />{" "}
         <br />
         <label htmlFor="password">Password:</label>
@@ -65,13 +66,14 @@ export const SignIn = () => {
           id="password"
           type="password"
           required
-          className="border border-t-0 border-x-0 border-nav"
+          className="border border-t-0 border-x-0 border-nav outline-none"
           onChange={handleChange}
           name="password"
           value={password}
+          placeholder="Enter your password"
         />
-        <button type="submit" className="bg-nav text-white py-1 mt-2">
-          SignUp
+        <button type="submit" className="bg-nav text-white py-4 mt-10 ">
+          Continue
         </button>
       </form>
       <h2 className="text-[18px]">or</h2>
