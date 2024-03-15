@@ -29,7 +29,7 @@ const landingPage = () => {
         style={{ background: `${backgrounds[bgIndex]}` }}
         className={`${styles.paddingX} flex items-center justify-between text-white w-[100%] h-[75svh] py-3`}
       >
-        <div className="w-[100%] gap-[10%] flex items-center">
+        <div className="w-[100%] gap-[10%] flex ">
           <div className="w-[45%] flex flex-col ">
             <div className="w-full">
               <h2 className="text-[46px] font-bold mb-4 leading-[50px]">
