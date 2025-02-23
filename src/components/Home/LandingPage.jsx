@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { Categories } from "./Home.data/";
+import { Categories } from "./data/";
 import { styles, layout } from "../../style";
 import "./landingPage.css";
 import heroImg from "../assets/heroImg.jpg";

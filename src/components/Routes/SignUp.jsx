@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { LogGoogleUser } from "./FrontendAuth";
 import { createUserWithEmailandPassword } from "../../Utility/Firebase/firbase";
 import { createUser } from "../../Utility/Firebase/firestore";
+import { navigate } from "@reach/router";
 
 const defaultField = {
-  displayName: "displayName",
-  email: "mike@gmail.com",
+  displayName: "",
+  email: "",
   password: "",
   confirmPassword: "",
 };
@@ -35,6 +36,7 @@ export const SignUp = () => {
       const { user } = await createUserWithEmailandPassword(email, password);
       await createUser(user, { displayName });
       resetField();
+      navigate("/sign-in");
     } catch (error) {
       if (error.code == "auth/email-already-in-use") {
         alert("Email already exist");

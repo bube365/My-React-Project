@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LogGoogleUser } from "./FrontendAuth";
 import { SignInUsersWithEmailandPassword } from "../../Utility/Firebase/firbase";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 const defaultField = {
   email: "mike@gmail.com",
@@ -8,6 +9,10 @@ const defaultField = {
 };
 
 export const SignIn = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/dashboard";
+
   const [inputField, setInputField] = useState("");
   const { email, password } = inputField;
 
@@ -27,6 +32,9 @@ export const SignIn = () => {
       const response = await SignInUsersWithEmailandPassword(email, password);
       console.log(response);
       resetField();
+      navigate(from, { replace: true });
+
+      // /dashboard
     } catch (error) {
       switch (error.code) {
         case "auth/wrong-password":
